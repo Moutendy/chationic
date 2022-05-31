@@ -7,6 +7,11 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  activedTab:string = 'chats'
   constructor() {}
 
+  segmentChange(event:any)
+  {
+this.activedTab=event.target.value;
+  }
 }
