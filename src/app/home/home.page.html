@@ -8,7 +8,7 @@
 
 <ion-content >
 <div class="tabs ion-padding">
-<ion-segment value="chats" (ionchange)="segmentChange($event)">
+<ion-segment value="chats" (ionChange)="segmentChange($event)">
 <ion-segment-button value="chats">
 <ion-label>chats</ion-label>
 </ion-segment-button>
@@ -22,5 +22,31 @@
       <ion-label>music</ion-label>
       </ion-segment-button>
 </ion-segment>
+</div>
+<div class="chat-list" *ngIf="activedTab =='chats'">
+  <div class="recent-chats ion-padding">
+    <div class="heading">
+<h1>Recent Chats</h1>
+<ion-icon name="search-sharp"></ion-icon>
+    </div>
+    <div class="chats">
+<ion-item lines="none" routerLink="/conversation-page">
+<ion-avatar slot="start">
+  <img src="https://i.pravatar.cc/300" alt="">
+
+</ion-avatar>
+<ion-label class="ion-text-nowrap">
+<h2>Bella</h2>
+<p>Typing...</p>
+</ion-label>
+<div class="info-div">
+  <p>
+    4:20
+  </p>
+</div>
+</ion-item>
+
+    </div>
+  </div>
 </div>
 </ion-content>

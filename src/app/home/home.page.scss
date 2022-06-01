@@ -38,4 +38,61 @@ ion-content{
       }
     }
   }
+
+  .chat-list{
+    background:#fff;
+    margin-top:3px;
+    border-top-right-radius: 38px;
+    border-top-left-radius: 38px;
+    .all-chats{
+      padding-top: 0;
+
+    }
+    .heading{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color:#7c7899;
+      h1{
+        font-size: 1.1rem;
+        font-weight: bold;
+
+      }
+      ion-icon{
+        font-size: 1.5rem;
+      }
+
+    }
+    .chat-list{
+      margin-top: 15px;
+      ion-item::part(native)
+      {
+        padding: 0;
+      }
+      ion-item
+      {
+        margin-bottom: 15px;
+        ion-avatar{
+          width: 100% !important;
+          height: 100% !important;
+          max-width: 51px;
+        }
+        ion-label{
+          h2{
+            font-size: 1rem;
+            font-weight: bolder;
+            color:#7c7899
+          }
+          p{
+            margin-top: 6px;
+            font-size: 0.8rem;
+            color:#7c7899;
+            opacity: 0.5;
+            letter-spacing: 0.5;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
 }
