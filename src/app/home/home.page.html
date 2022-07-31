@@ -1,7 +1,7 @@
 <ion-header class="ion-no--border" mode="ios">
   <ion-toolbar class="ion-padding">
 <ion-icon name="menu-outline" slot="start"></ion-icon>
-<ion-title>Chat</ion-title>
+<ion-title>Chat Gaboma</ion-title>
 <ion-icon name="camera-outline" slot="end"></ion-icon>
   </ion-toolbar>
 </ion-header>
@@ -12,15 +12,11 @@
 <ion-segment-button value="chats">
 <ion-label>chats</ion-label>
 </ion-segment-button>
-<ion-segment-button value="status">
-  <ion-label>status</ion-label>
+<ion-segment-button value="actu">
+  <ion-label>Actualite</ion-label>
   </ion-segment-button>
-  <ion-segment-button value="calls">
-    <ion-label>calls</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="musics">
-      <ion-label>music</ion-label>
-      </ion-segment-button>
+
+
 </ion-segment>
 </div>
 <div class="chat-list" *ngIf="activedTab =='chats'">
@@ -48,5 +44,26 @@
 
     </div>
   </div>
+</div>
+
+<div class="chat-list" *ngIf="activedTab =='actu'">
+
+  <ion-item lines="none" routerLink="/actualiter">
+
+    <ion-avatar slot="start">
+      <img src="https://i.pravatar.cc/300" alt="">
+
+    </ion-avatar>
+    <ion-label class="ion-text-nowrap">
+
+    <h2>Actualiter</h2>
+    <p>Typing...</p>
+    </ion-label>
+    <div class="info-div">
+      <p>
+        4:20
+      </p>
+    </div>
+    </ion-item>
 </div>
 </ion-content>
