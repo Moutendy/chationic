@@ -1,9 +1,45 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>conversation-page</ion-title>
+<ion-header class="ion-no--border" mode="ios">
+  <ion-row>
+  <ion-toolbar class="ion-padding">
+
+    <ion-buttons slot="start">
+      <ion-menu-button (click)="natigate()">
+        <ion-icon  name="arrow-back-sharp" ></ion-icon>
+      </ion-menu-button>
+
+    </ion-buttons>
+    <ion-avatar slot="start">
+      <img src="https://i.pravatar.cc/300" alt="">
+    </ion-avatar>
+    <ion-label>Christopher</ion-label>
+    <ion-title>
+   chat
+    </ion-title>
+
   </ion-toolbar>
+</ion-row>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+      <ion-card-title>Card Title</ion-card-title>
+    </ion-card-header>
 
+    <ion-card-content>
+      Keep close to Nature's heart... and break clear away, once in awhile,
+      and climb a mountain or spend a week in the woods. Wash your spirit clean.
+    </ion-card-content>
+  </ion-card>
+  <ion-row>
+  <ion-item class="sendMessage">
+    <ion-textarea placeholder="Ecrire votre message..."></ion-textarea>
+
+  </ion-item>
+  <ion-item class="sendbutton">
+    <ion-icon name="paper-plane-outline"></ion-icon>
+  </ion-item>
+
+</ion-row>
 </ion-content>

@@ -1,5 +1,10 @@
-<ion-header>
-  <ion-toolbar>
+<ion-header class="ion-no--border" mode="ios">
+  <ion-toolbar class="ion-padding">
+    <ion-buttons slot="start">
+      <ion-menu-button (click)="natigate()">
+        <ion-icon  name="arrow-back-sharp" ></ion-icon>
+      </ion-menu-button>
+    </ion-buttons>
     <ion-title>actualiter</ion-title>
   </ion-toolbar>
 </ion-header>

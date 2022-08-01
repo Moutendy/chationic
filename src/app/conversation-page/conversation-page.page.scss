@@ -1,0 +1,63 @@
+ion-header{
+  ion-toolbar{
+    --background: #66c8f5;
+    font-family: "Satisfy",cursive !important;
+    letter-spacing: 2px;
+    font-size: 2rem !important;
+    color: #fff;
+    ion-title{
+      margin-top: 2px;
+      font-size: 2rem !important;
+    }
+
+  }
+
+}
+ion-label{
+
+    font-size: 0.4em;
+    font-weight: bolder;
+    color:#7c7899;
+    padding-right: 20%;
+
+  p{
+    margin-top: 6px;
+    font-size: 0.8rem;
+    color:#7c7899;
+    opacity: 0.5;
+    letter-spacing: 0.5;
+    font-weight: bold;
+  }
+}
+
+ion-title{
+  font-size: 0.7em;
+  position: absolute;
+  left: 10%;
+
+}
+
+
+ion-card{
+  height: 90%;
+}
+.sendMessage
+{
+  border-radius: 25px;
+  border: #66c8f5 1px solid;
+  width: 70%;
+  height: 45px;
+  margin-left: 5%;
+  margin-bottom: 5%;
+  text-align: center;
+  text-size-adjust: inherit;
+}
+.sendbutton
+{
+  text-decoration: none;
+  border: #66c8f5 1px solid;
+  height: 45px;
+  margin-left: 5%;
+  text-align: center;
+  color: #66c8f5;
+}
