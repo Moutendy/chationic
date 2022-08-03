@@ -16,4 +16,11 @@ export class ActualiterPage implements OnInit {
   {
 this.router.navigateByUrl('/menu/home');
   }
+
+  natigateprofile()
+  {
+
+    this.router.navigateByUrl('/profileabonne');
+  }
+
 }

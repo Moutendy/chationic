@@ -13,3 +13,54 @@ ion-header{
   }
 
 }
+
+.headactu{
+  display: flex;
+  flex-wrap: wrap;
+}
+.titre
+{
+  color: #66c8f5;
+  inline-size: 250px;
+  overflow: hidden;
+  display: block;
+  font-size: large;
+  font-weight: bold;
+  margin-left: 2%;
+}
+
+.titre label
+{
+  font-size: small;
+}
+
+.iconlike
+{
+
+color: #66c8f5;
+border: none;
+border: #66c8f5 1px solid;
+border-radius: 23px;
+}
+
+svg{
+  margin-left: 5%;
+}
+
+.like
+{
+  margin-left: 5%;
+  margin-top: 1%;
+  font-size: large;
+  font-weight: bold;
+}
+
+img{
+
+  width: 100%;
+  border-radius: 50%;
+  box-shadow: 2px 3px 2px 4px  #66c8f5;
+
+}
+
+

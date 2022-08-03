@@ -20,6 +20,10 @@ const routes: Routes = [
   {
     path: 'conversation-page',
     loadChildren: () => import('./conversation-page/conversation-page.module').then( m => m.ConversationPagePageModule)
+  },
+  {
+    path: 'profileabonne',
+    loadChildren: () => import('./profileabonne/profileabonne.module').then( m => m.ProfileabonnePageModule)
   }
 ];
 
